@@ -14,7 +14,7 @@ public class TestMethodeStatic {
         int a = 8;
         int b = 7;
 
-        int greatestNumber = Math.max(a, b);
+        int greatestNumber = Integer.max(a, b);
         System.out.println(greatestNumber);
     }
 }

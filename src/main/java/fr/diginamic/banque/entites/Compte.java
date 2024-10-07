@@ -2,10 +2,17 @@ package fr.diginamic.banque.entites;
 
 public class Compte {
 
-    static int numCompte;
-    static int soldeCompte;
+    int numCompte;
+    int soldeCompte;
 
-    public static void main(String[] args){
-
+    public Compte(int numCompte, int soldeCompte) {
+        this.numCompte = numCompte;
+        this.soldeCompte = soldeCompte;
     }
+
+    private String name;
+    public String toString(){
+        return numCompte + ", " + soldeCompte;
+    }
+
 }
