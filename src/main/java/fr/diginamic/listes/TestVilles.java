@@ -18,6 +18,15 @@ public class TestVilles {
         villes.add(new Ville("Marseille", 850700));
         villes.add(new Ville("Tarbes", 40600));
 
+        //Tri
+        Collections.sort(villes);
+        for (Ville v: villes) {
+            System.out.println(v);
+        }
+        System.out.println("------------------");
+
+
+
         //Ville la plus peuplée
         Ville villePlusPeuplee = villes.get(0);
         for (Ville ville : villes) {

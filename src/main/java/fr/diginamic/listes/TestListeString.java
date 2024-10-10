@@ -29,8 +29,8 @@ public class TestListeString {
 
         Iterator<String> iterator = listeVilles.iterator();
         while (iterator.hasNext()){
-            String myListe = iterator.next();
-            if(myListe.startsWith("N")){
+            String itVilles = iterator.next();
+            if(itVilles.startsWith("N")){
                 iterator.remove();
             }
         }
