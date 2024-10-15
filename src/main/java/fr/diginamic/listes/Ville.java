@@ -1,5 +1,7 @@
 package fr.diginamic.listes;
 
+import java.util.Objects;
+
 public class Ville implements Comparable<Ville> {
 
     private String nom;
@@ -43,5 +45,14 @@ public class Ville implements Comparable<Ville> {
     @Override
     public String toString() {
         return nom + ", " + nbHabitants + " hab.";
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (!(obj instanceof Ville)){
+            return false;
+        }
+        Ville autre = (Ville) obj;
+        return this.nom.equals(autre.nom);
     }
 }
